@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sarwadnya Nirwal | Portfolio</title>
+  <meta name="description" content="Portfolio of Sarwadnya Nirwal - Student at NST_ADYPU.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons for UI -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* Direct embedded styles to guarantee instant rendering of ice blue cards on black */
+    body {
+      background-color: #000000 !important;
+      color: #ffffff;
+      font-family: 'Outfit', sans-serif;
+      margin: 0;
+      padding: 0;
+      cursor: default;
+    }
+    .content-wrapper {
+      width: 100%;
+      max-width: 760px;
+      margin: 40px auto 80px;
+      padding: 0 20px;
+      box-sizing: border-box;
+    }
+    .cards-vertical-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+      width: 100%;
+    }
+    .ice-card {
+      width: 100%;
+      background: linear-gradient(145deg, #dbf3fe 0%, #b8e6fa 45%, #88d7f8 100%) !important;
+      border: 2px solid #38bdf8 !important;
+      border-radius: 20px !important;
+      padding: 34px 36px;
+      color: #041c30 !important;
+      box-shadow: 0 12px 32px rgba(56, 189, 248, 0.25), 0 4px 14px rgba(0, 0, 0, 0.5) !important;
+      box-sizing: border-box;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+    .ice-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 18px 42px rgba(56, 189, 248, 0.4), 0 6px 18px rgba(0, 0, 0, 0.6) !important;
+      border-color: #0284c7 !important;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="nav-brand">
+      <div class="brand-cube">
+        <span>SN</span>
+      </div>
+      <div class="brand-info">
+        <span class="brand-name">SARWADNYA</span>
+        <span class="brand-badge"><span class="status-pulse"></span>NST_ADYPU</span>
+      </div>
+    </div>
+
+    <div class="nav-controls">
+      <div class="mode-tag">
+        <i class="fa-solid fa-snowflake"></i>
+        <span>ICE BLUE EDITION</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content: Cards Arranged One by One Down Side -->
+  <main class="content-wrapper">
+    <div class="cards-vertical-stack">
+
+      <!-- ==============================================
+           CARD 1: MY NAME -> SARWADNYA NIRWAL
+           ============================================== -->
+      <article class="ice-card" id="card-1">
+        <div class="card-meta">
+          <span class="card-number">CARD // 01</span>
+          <span class="card-status"><i class="fa-solid fa-fingerprint"></i> IDENTITY</span>
+        </div>
+
+        <div class="card-visual">
+          <div class="visual-icon">
+            <i class="fa-solid fa-user-astronaut"></i>
+          </div>
+        </div>
+
+        <div class="card-body">
+          <div class="exact-label">MY NAME</div>
+          <div class="exact-value">SARWADNYA NIRWAL</div>
+        </div>
+
+        <div class="card-footer">
+          <div class="tech-tags">
+            <span class="tag">Engineering</span>
+            <span class="tag">Creative Tech</span>
+            <span class="tag">Systems</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- ==============================================
+           CARD 2: MY PROJECTS -> AlphaForge
+           ============================================== -->
+      <article class="ice-card" id="card-2">
+        <div class="card-meta">
+          <span class="card-number">CARD // 02</span>
+          <span class="card-status"><i class="fa-solid fa-code-fork"></i> REPOSITORY</span>
+        </div>
+
+        <div class="card-visual">
+          <div class="visual-icon">
+            <i class="fa-solid fa-fire-burner"></i>
+          </div>
+        </div>
+
+        <div class="card-body">
+          <div class="exact-label">MY PROJECTS</div>
+          <div class="exact-value">AlphaForge</div>
+        </div>
+
+        <div class="card-footer">
+          <p class="card-desc">Advanced intelligent systems forging scalable software architectures.</p>
+          <div class="tech-tags">
+            <span class="tag highlight">Core Project</span>
+            <span class="tag">Engine</span>
+            <span class="tag">v1.0</span>
+          </div>
+          <div class="card-cta">
+            <button class="forge-btn" onclick="openProjectModal()">
+              <span>Inspect AlphaForge</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <!-- ==============================================
+           CARD 3: ABOUT ME -> STUDENT AT NST_ADYPU
+           ============================================== -->
+      <article class="ice-card" id="card-3">
+        <div class="card-meta">
+          <span class="card-number">CARD // 03</span>
+          <span class="card-status"><i class="fa-solid fa-graduation-cap"></i> EDUCATION</span>
+        </div>
+
+        <div class="card-visual">
+          <div class="visual-icon">
+            <i class="fa-solid fa-university"></i>
+          </div>
+        </div>
+
+        <div class="card-body">
+          <div class="exact-label">ABOUT ME</div>
+          <div class="exact-value">STUDENT AT NST_ADYPU</div>
+        </div>
+
+        <div class="card-footer">
+          <p class="card-desc">Innovating at the intersection of technology, creative engineering, and modern development at NST ADYPU.</p>
+          <div class="tech-tags">
+            <span class="tag">NST</span>
+            <span class="tag">ADYPU</span>
+            <span class="tag">Developer</span>
+            <span class="tag">Innovator</span>
+          </div>
+          <div class="location-badge">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Ajeenkya DY Patil University</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <!-- Project Details Modal for AlphaForge -->
+  <div class="modal-backdrop" id="project-modal" aria-hidden="true">
+    <div class="modal-box">
+      <button class="modal-close-btn" onclick="closeProjectModal()" aria-label="Close modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      
+      <div class="modal-header">
+        <div class="modal-tag">PROJECT SPOTLIGHT</div>
+        <h2 class="modal-title">AlphaForge</h2>
+        <div class="modal-subtitle">Next-Generation Engineering by Sarwadnya Nirwal</div>
+      </div>
+
+      <div class="modal-body">
+        <div class="forge-stats-grid">
+          <div class="forge-stat">
+            <span class="stat-number">01</span>
+            <span class="stat-name">High Performance</span>
+          </div>
+          <div class="forge-stat">
+            <span class="stat-number">02</span>
+            <span class="stat-name">Modular Core</span>
+          </div>
+          <div class="forge-stat">
+            <span class="stat-number">03</span>
+            <span class="stat-name">Modern Architecture</span>
+          </div>
+        </div>
+
+        <p class="forge-description">
+          <strong>AlphaForge</strong> represents cutting-edge development architecture engineered with speed, scalability, and seamless user experiences in mind. Created by <strong>Sarwadnya Nirwal</strong> at <strong>NST_ADYPU</strong>.
+        </p>
+
+        <div class="modal-tech-stack">
+          <span class="stack-badge"><i class="fa-brands fa-html5"></i> HTML5</span>
+          <span class="stack-badge"><i class="fa-brands fa-css3-alt"></i> Modern CSS</span>
+          <span class="stack-badge"><i class="fa-brands fa-js"></i> JavaScript ES6+</span>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="primary-btn" onclick="closeProjectModal()">
+          <i class="fa-solid fa-check"></i> Close
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="cyber-footer">
+    <div class="footer-left">
+      <span>&copy; <span id="current-year"></span> <strong>SARWADNYA NIRWAL</strong> &bull; All Rights Reserved</span>
+    </div>
+    <div class="footer-center">
+      <span class="institution-indicator"><i class="fa-solid fa-atom"></i> NST_ADYPU PORTFOLIO</span>
+    </div>
+    <div class="footer-right">
+      <div class="status-indicator">
+        <span class="live-pulse"></span> SYSTEM OPERATIONAL
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
